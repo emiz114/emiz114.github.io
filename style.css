@@ -13,9 +13,14 @@ h1 {
   margin: 10px 0;            /* vertical space between elements */
 }
 
-h2 {
-  font-size: 180px;           /* sets the size of the font */
-  letter-spacing: 2px;       /* spacing between letters */
-  line-height: 1;          /* spacing between lines */
-  margin: 20px 0;            /* vertical space between elements */
+.contents {
+  position: absolute;
+  top: 120px;
+  right: 120px;
+  text-align: right;
+}
+
+.contents p {
+  font-size: 80px;
+  margin: 24px 0;
 }
