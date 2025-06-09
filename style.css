@@ -45,16 +45,19 @@ h1 {
   margin: 24px 0;
 }
 
-.cv-link {
-  text-decoration: none;    /* removes underline */
-  color: inherit;           /* keeps the same color as surrounding text */
+.contents-link {
+  font-size: 80px;
+  display: block;              /* shrink-wraps the text */
+  padding: 10px 28px;                  /* oval padding */
+  border-radius: 999px;               /* oval shape */
+  background-color: transparent;      /* default */
+  color: inherit;
+  text-decoration: none;
+  transition: background-color 0.3s ease;
 }
 
-.cv-link:visited {
-  color: inherit;           /* prevents purple color after clicking */
-}
-
-.cv-link p {
-  margin: 0;
+.contents-link:hover {
+  background-color: rgba(255, 255, 255, 0.3);  /* soft highlight */
   cursor: pointer;
 }
+
