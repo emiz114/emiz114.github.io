@@ -1,7 +1,10 @@
 body {
   font-family: "SF Pro", -apple-system, BlinkMacSystemFont, sans-serif;
   color: white;
-  background-color: #9eb4d3;
+  background: linear-gradient(to bottom, #9eb4d3 0%, #5E6C85 80%);
+  /* background-color: #9eb4d3; */
+  background-repeat: no-repeat;
+  background-attachment: fixed;
   text-align: left;
   padding: 10px;
   padding-left: 120px;
@@ -16,6 +19,7 @@ body {
 
 h1 {
   font-size: 240px;           /* sets the size of the font */
+  font-weight: bold;
   letter-spacing: 2px;       /* spacing between letters */
   line-height: 1;          /* spacing between lines */
   margin: 10px 0;            /* vertical space between elements */
@@ -59,5 +63,49 @@ h1 {
 .contents-link:hover {
   background-color: rgba(255, 255, 255, 0.3);  /* soft highlight */
   cursor: pointer;
+}
+
+.site-footer {
+  position: fixed;       /* or absolute if you want it to scroll */
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  background-color: rgba(255, 255, 255, 0.1); /* semi-transparent or use solid */
+  color: white;
+  text-align: center;
+  padding: 10px 0;
+  font-size: 18px;
+  backdrop-filter: blur(4px); /* optional glassy look */
+}
+
+.site-footer a {
+  color: white;
+  /* text-decoration: underline; */
+}
+
+.header {
+  position: fixed;       /* or absolute if you want it to scroll */
+  top: 0;
+  left: 0;
+  width: 100%;
+  background-color: rgba(255, 255, 255, 0.1); /* semi-transparent or use solid */
+  color: white;
+  text-align: center;
+  padding: 10px 0;
+  font-size: 18px;
+  backdrop-filter: blur(4px); /* optional glassy look */
+}
+
+.header a {
+  color: white;
+}
+
+#typewriter::after {
+  content: '|';
+  animation: blink 0.75s step-end infinite;
+}
+
+@keyframes blink {
+  50% { opacity: 0; }
 }
 
