@@ -1,5 +1,6 @@
 body {
-  font-family: "SF Pro", -apple-system, BlinkMacSystemFont, sans-serif;
+  /* font-family: "SF Pro", -apple-system, BlinkMacSystemFont, sans-serif; */
+  font-family: 'Figtree', sans-serif;
   color: white;
   background: linear-gradient(to bottom, #9eb4d3 0%, #5E6C85 80%);
   /* background-color: #9eb4d3; */
@@ -19,14 +20,14 @@ body {
 
 h1 {
   font-size: 240px;           /* sets the size of the font */
-  font-weight: bold;
+  font-weight: 600;
   letter-spacing: 2px;       /* spacing between letters */
   line-height: 1;          /* spacing between lines */
   margin: 10px 0;            /* vertical space between elements */
 }
 
 .contents {
-  position: fixed;
+  position: absolute;
   top: 100px;
   right: 20px;
   text-align: right;
@@ -107,5 +108,14 @@ h1 {
 
 @keyframes blink {
   50% { opacity: 0; }
+}
+
+#cat {
+  position: absolute;
+  top: 0;
+  left: 0;
+  pointer-events: none; /* lets mouse clicks pass through */
+  z-index: 9999;
+  transition: transform 0.1s linear;
 }
 
